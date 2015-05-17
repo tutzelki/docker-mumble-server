@@ -6,8 +6,8 @@ This is a Docker container for running [Murmur](http://wiki.mumble.info/wiki/Mai
 Environment
 -----------
 
-$UIDd = 501 (UID to run murmurd)
-$GIDd = 501 (GID to run murmurd)
+`$UIDd = 501 (UID to run murmurd)`
+`$GIDd = 501 (GID to run murmurd)`
 
 Usage
 -----
