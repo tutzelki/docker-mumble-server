@@ -3,14 +3,22 @@ docker-mumble-server
 
 This is a Docker container for running [Murmur](http://wiki.mumble.info/wiki/Main_Page), the server for the Mumble voice-over-ip client.
 
+Environment
+-----------
+
+$UIDd = 501 (UID to run murmurd)
+$GIDd = 501 (GID to run murmurd)
+
 Usage
 -----
+Pull source
 
-This docker image is available as a [trusted build on the docker index](https://registry.hub.docker.com/u/coppit/mumble-server/).
+Run
+`docker build -t <image name> .`
 
 To initialize the server configuration, run this:
 
-`docker run --name=mumble-server -d --net=host -v /path/to/config/mumble-server:/data -t coppit/mumble-server`
+`docker run --name=mumble-server -d --net=host -v /path/to/config/mumble-server:/data <image name>`
 
 The container will create a config file in /path/to/config/mumble-server. Edit the file, setting the server password and any welcome message.
 
